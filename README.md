@@ -30,11 +30,11 @@ Ce projet est une démonstration éducative conçue pour illustrer le fonctionne
 
 Le projet se compose de trois composants principaux :
 
-1. `**ransomware.c**` - Le script de chiffrement qui inclut également le keylogger et l'interface de rançon.
+1. **ransomware.c** - Le script de chiffrement qui inclut également le keylogger et l'interface de rançon.
 
-2. `**dechiffrage.c**` - Le script de déchiffrement pour restaurer les fichiers chiffrés.
+2. **dechiffrage.c** - Le script de déchiffrement pour restaurer les fichiers chiffrés.
 
-3. `**serveur.c**` - Un serveur simple pour simuler l'exfiltration de fichiers et de frappes clavier.
+3. **serveur.c** - Un serveur simple pour simuler l'exfiltration de fichiers et de frappes clavier.
 
 &nbsp;
 
@@ -46,7 +46,7 @@ Le projet se compose de trois composants principaux :
 
 - **OpenSSL** pour la cryptographie.
 
-- `**ncurses**` pour le keylogger (uniquement nécessaire sous Unix/Linux).
+- **ncurses** pour le keylogger (uniquement nécessaire sous Unix/Linux).
 
 &nbsp;
 
@@ -68,23 +68,23 @@ Le projet se compose de trois composants principaux :
 **cd <DOSSIER_DU_PROJET>  
 <br/>**<span style="color: #0d0d0d;">Compilez les sources :  
 </span>  
-**`gcc ransomware.c -o ransomware -lssl -lcrypto -lncurses`**
+**gcc ransomware.c -o ransomware -lssl -lcrypto -lncurses**
 
-`gcc dechiffrage.c -o dechiffrage -lssl -lcrypto`
+**gcc dechiffrage.c -o dechiffrage -lssl -lcrypto**
 
-**`gcc serveur.c -o serveur`**  
+**gcc serveur.c -o serveur**  
 **  
 <br/>**
 
 ### Utilisation
 
 Pour exécuter le serveur d'exfiltration :**  
-<br/>**`./serveur`**  
+<br/>**<span style="color: #e03e2d;">./serveur**  
 <br/>Pour chiffrer les fichiers :  
 Assurez-vous que le serveur d'exfiltration est en cours d'exécution.**  
-<br/>**<span style="color: #e03e2d;">`./ransomware <chemin_vers_le_dossier_à_chiffrer>`</span>****  
+<br/>**<span style="color: #e03e2d;">./ransomware <chemin_vers_le_dossier_à_chiffrer></span>**  
 <br/>Pour déchiffrer les fichiers :**  
-<br/>****`./dechiffrage <chemin_vers_le_dossier_à_déchiffrer>`**
+<br/>**<span style="color: #e03e2d;">./dechiffrage <chemin_vers_le_dossier_à_déchiffrer>**
 
 ### Sécurité et Éthique
 
